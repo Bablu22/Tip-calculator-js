@@ -115,13 +115,13 @@ main{
     top: 70%;
 
 }
-@media screen and (max-width:668px) {
+@media screen and (max-width:768px) {
         
         main{
             grid-template-columns: repeat(1, 1fr);
             width: 100%;
             padding: 50px 0;
-            margin: 100px 0;
+            /* margin: 100px 0; */
         }
         .result-area{
             height: 100%;
@@ -135,4 +135,27 @@ main{
             
         }
         
+}
+
+
+@media screen and (max-width:442px) {
+        
+    main{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        padding: 50px 0;
+        margin: 200px 0;
+    }
+    .result-area{
+        height: 100%;
+        padding: 60px 5px;
+    }
+    .reset{
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+        
+    }
+    
 }
