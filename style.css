@@ -1,0 +1,131 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Space Mono', monospace;
+    background-color: #C5E4E7;
+    font-weight: 700;
+}
+h3{
+    color: #5E7A7D;
+    padding-bottom: 10px;
+}
+input{
+    width: 100%;
+    padding: 9px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+    border: navajowhite;
+    background-color: hsl(180, 17%, 90%);
+    outline-color: hsl(172, 67%, 45%);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: gray;
+    font-family: 'Space Mono', monospace;
+}
+.button-group{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+
+}
+button{
+    padding: 8px 5px;
+    background-color: #035155;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Space Mono', monospace;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+button:hover{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+.button-input{
+   width: 100%;
+   height: 100%;
+   padding: 0;
+   text-align: center;
+   font-family: 'Space Mono', monospace;
+}
+main{
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+
+.input-area{
+    margin: auto;
+    width: 90%;
+}
+.result-area{
+    background-color: #00494D;
+    border-radius: 20px;
+    padding: 50px;
+    margin: auto;
+    width: 90%;
+    height: 80%;
+    position: relative;
+}
+.result-area h2{
+    font-size: 40px;
+    color: hsl(172, 67%, 45%);
+}
+.result-area h3{
+    color: white;
+}
+.tip, .total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reset{
+    width: 80%;
+    background-color: hsl(172, 67%, 45%);
+    color: #035155;
+    position: absolute;
+    top: 70%;
+
+}
+@media screen and (max-width:768px) {
+        body{
+            padding: 10px;
+        }
+        main{
+            grid-template-columns: repeat(1, 1fr);
+            width: 100%;
+            padding: 40px 0;
+        }
+        .result-area{
+            height: 100%;
+            padding: 60px 5px;
+        }
+        .reset{
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translateX(-50%);
+            
+        }
+        
+}
