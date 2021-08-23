@@ -115,7 +115,7 @@ main{
     top: 70%;
 
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:668px) {
         
         main{
             grid-template-columns: repeat(1, 1fr);
