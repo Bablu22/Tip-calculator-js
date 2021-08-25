@@ -16,35 +16,35 @@
         <div class="input-area">
             <div>
                 <h3>Bill</h3>
-                <input type="number" name="" id="" placeholder="0">
+                <input type="number" name="" id="bill-amount" placeholder="0">
             </div>
             <div>
                 <h3>Select Tip %</h3>
                 <div class="button-group">
-                    <button>5%</button>
-                    <button>10%</button>
-                    <button>15%</button>
-                    <button>25%</button>
-                    <button>50%</button>
-                    <input type="text" class="button-input" placeholder="Custom">
+                    <button id="5%">5%</button>
+                    <button id="10%">10%</button>
+                    <button id="15%">15%</button>
+                    <button id="25%">25%</button>
+                    <button id="50%">50%</button>
+                    <input id="custom-button" type="text" class="button-input" placeholder="Custom">
                 </div>
             </div>
             <div style="margin-top: 20px;">
                 <h3>Number of People</h3>
-                <input type="number" name="" id="" placeholder="0">
+                <input type="number" name="" id="people" placeholder="0">
             </div>
 
         </div>
         <div class="result-area">
             <div class="tip">
                 <h3>Tip Amount/person</h3>
-                <h2>$0.00</h2>
+                <h2>$<span id="tip-amount">0.00</span></h2>
             </div>
             <div class="total">
                 <h3>Total/person</h3>
-                <h2>$0.00</h2>
+                <h2>$<span id="total-amount">0.000</span></h2>
             </div>
-            <button class="reset">Reset</button>
+            <button class="reset" id="reset">Reset</button>
         </div>
     </main>
 
